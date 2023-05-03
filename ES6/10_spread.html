@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = ['강아지', '고양이', '토끼', '햄토리']
+        const arr2 = arr.concat(); //사본 만들기
+        const arr3 = [...arr] //사본 만들기
+        console.log(arr2)
+        console.log(arr3)
+
+        const arr4 = arr.concat('다람쥐', '기린') //추가: 무조건 끝에 추가됨
+        console.log(arr4)
+
+        const arr5 = [...arr, '다람쥐', '기린'] //추가: 처음, 가운데, 끝 조절 가능 
+        console.log(arr5)
+
+        const arr6 = ['다람쥐', ...arr, '기린'] 
+        console.log(arr6)
+
+        const arr7 = ['다람쥐', '기린', ...arr] 
+        console.log(arr7)
+
+        const dog = {
+            name: '멍멍이',
+            age: 2
+        }
+
+        const dog2 = {...dog, name: '진돗개', age: 5} //배열은 추가되지만 객체는 덮어쓴다. → 수정할 때 활용 가능
+        console.log(dog2)
+    </script>
+</body>
+</html>
+
+<!--
+    spread: ...
+    전개 연산자
+-->

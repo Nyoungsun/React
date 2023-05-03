@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function make1(){
+            console.log('Nice day')
+        }
+        make1()
+
+        //화살표 함수
+        const make2 = () => {
+            console.log('Nice time')
+        }
+        make2()
+
+        function make3(num) {
+            console.log(`num = ${num}`)
+        }
+        make3(12)
+
+        const make4 = (num) => {
+            console.log(`num = ${num}`)
+        }
+        make4(55)
+
+        function make5(a, b) {
+            console.log(`${a} + ${b} = ${a+b}`)
+        }
+        make5(1, 33)
+
+        const make6 = (a, b) => {
+            console.log(`${a} + ${b} = ${a+b}`)
+        }
+        make6(2, 55)
+
+        
+    </script>
+    
+</body>
+</html>
+
+<!-- 
+① 매개변수가 없을 경우
+function(){} → () => { ... }
+
+② 매개변수가 한 개인 경우, 소괄호를 생략 가능
+function(x){} → (x) => { ... }
+
+③ 매개변수가 여러 개인 경우, 소괄호를 생략할 수 없다.
+function(x,y){} → (x, y) => { ... } 
+-->

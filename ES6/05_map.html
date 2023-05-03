@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [10, 20, 30]
+        const data = [
+        {id: 1, name: '홍길동', age: 25},
+        {id: 2, name: '기영이', age: 21},
+        {id: 3, name: '세균맨', age: 24}
+    ]
+
+    arr.map((item, index) => {
+        return (console.log(index, item)) //React에서는 return값이 없으면 값이 나오지 않으므로 반드시 써야함
+    })
+
+    data.map((item, index) => console.log(index, item)) //처리되는 문장이 한 줄일 경우 {}, return 생략 가능
+    
+    
+    </script>
+</body>
+</html>
+
+<!-- 
+map (반복문)
+[형식]
+배열.map((요소, 인덱스) => {
+   return 요소
+});
+ -->

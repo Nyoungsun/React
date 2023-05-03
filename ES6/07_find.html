@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arr = [10, 20, 30, 40, 50, 60]
+        const result = arr.find(item => item > 40)
+        console.log(result)
+
+        const result2 = arr.find(item => item === 20)
+        console.log(result2)
+
+        const result3 = arr.findIndex(item => item === 20)
+        console.log(result3)
+
+        const data = [
+        {id: 1, name: '홍길동', age: 25},
+        {id: 2, name: '기영이', age: 21},
+        {id: 3, name: '세균맨', age: 24}
+        ]
+
+        const result4 = data.find(item => item.id === 1)
+        console.log(result4)
+
+        const result5 = data.find(item => item.name === '어피치')
+        console.log(result5) //값이 없으므로 undefined
+
+        const result6 = data.findIndex(item => item.name === '어피치')
+        console.log(result6) //값이 없으므로 index = -1
+    </script>
+</body>
+
+</html>
+
+<!--
+    find: filter와 비슷, 결과는 하나의 값(처음 만나는 값을 가져온다)
+-->
