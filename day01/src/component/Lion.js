@@ -2,6 +2,7 @@ import React from 'react';
 
 const Lion = (props) => {
 
+    //비구조화 할당
     const {name} = props;
 
     return (
