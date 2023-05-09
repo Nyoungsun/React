@@ -1,5 +1,4 @@
 import React from 'react';
-import Test03 from './Test03';
 
 const Test03Modal = ({onClose}) => {
     return (
