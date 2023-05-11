@@ -2,18 +2,17 @@ import React from 'react';
 import Test01 from './component/Test01';
 import Test02 from './component/Test02';
 import Test03 from './component/Test03';
-import Todo from './component/Todo';
+import Test04 from './component/Test04';
 
 const App = () => {
   return (
     <div>
-      <Test01/>
-      <hr/>
+      {/* <Test01/> */}
       <Test02/>
       <hr/>
       <Test03/>
       <hr/>
-      <Todo/>
+      <Test04/>
     </div>
   );
 };

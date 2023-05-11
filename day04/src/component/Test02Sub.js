@@ -18,8 +18,7 @@ const Test02Sub = () => {
             console.log('cleanup')
             window.removeEventListener('mousemove', onMove)
         }
-    }, [])
-
+    }, []) //[ ] 안에 내용이 비어 있는 경우에는 컴포넌트가 사라질 때 cleanup 함수가 호출된다.
     return (
         <div style={{border: '1px solid black', width: 400, padding: 30, margin: 15}}>
             <h2>마우스 좌표</h2>
