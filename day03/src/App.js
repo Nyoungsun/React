@@ -7,6 +7,9 @@ import Test05 from './component/Test05';
 import Test06 from './component/Test06';
 import Test07Main from './component/Test07Main';
 import Test08Gallery from './component/Test08Gallery';
+import Test09 from './component/Test09';
+import Test10 from './component/Test10';
+import Test11 from './component/Test11';
 
 const App = () => {
   return (
@@ -26,6 +29,12 @@ const App = () => {
       <Test07Main/>
       <hr/>
       <Test08Gallery/>
+      <hr/>
+      <Test09/>
+      <hr/>
+      <Test10/>
+      <hr/>
+      <Test11/>
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import React from 'react';
 import Test08Item from './Test08Item';
 
-const Test08List = ({ data }) => {
+const Test08List = ({ data, onView }) => {
     return (
         <ul className='list'>
         {
-            data.map(item => <Test08Item item={item}/>)
+            data.map(item => <Test08Item key={item} item={item} onView={onView}/>)
         }
         </ul>
     );
