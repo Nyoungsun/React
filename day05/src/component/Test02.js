@@ -16,8 +16,6 @@ const Test02 = () => {
             .then(res => setDto(res.data)) //res: 응답객체
     }, [search]) // [id]로 지정하면 id의 값이 바뀔 때 마다 수행됨
 
-
-
     return (
         <div>
             <input type='text' value={id} onChange={(e) => setId(e.target.value)} />

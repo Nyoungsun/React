@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
+import Test04Sub from './Test04Sub';
 
 const Test04 = () => {
 
     const [color, setColor] = useState('')
+    const [food, setFood] = useState('')
+
 
     const onColor = (e) => {
         setColor(e.target.value)
     }
 
-    const onFood = () => {
-
+    const onFood = (e) => {
+        setFood(e.target.value)
     }
 
     return (
@@ -38,6 +41,7 @@ const Test04 = () => {
                     <label>짜장면</label>
                 </p>
             </div>
+            <Test04Sub color={color} food={food} />
         </div>
     );
 };

@@ -10,10 +10,10 @@ const Test01 = () => {
     //         .then(res => setData(res))
     // }, [])
 
-    // useEffect(() => {
-    //     axios.get('https://jsonplaceholder.typicode.com/posts')
-    //         .then(res => setData(res.data))
-    // }, [])
+    useEffect(() => {
+        axios.get('https://jsonplaceholder.typicode.com/posts')
+            .then(res => setData(res.data))
+    }, [])
 
     // useEffect(() => {
     //     const getData = async () => {
