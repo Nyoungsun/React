@@ -29,8 +29,10 @@ const Test11 = () => {
         <div>
             <p>
                 <input type='checkbox' name='all' onChange={onChk}
-                    checked={data.filter(item => item.isChk !== true).length < 1} /> 
-                    {/* isChk === false가 없으면 length === 0이므로 checked===true*/}
+                    checked={data.filter(item => item.isChk !== true).length < 1} />
+                {/*
+                 item.isChk가 true가 아닌 것(false)이 1개라도 있으면 false를 반환하여 전체동의 해제
+                */}
                 <label>전체 동의</label>
             </p>
             {
