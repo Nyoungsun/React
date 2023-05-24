@@ -1,2 +1,2 @@
 # React
-React 연습
+React 연습!
